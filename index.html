@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"content="width=device-width, initial-scale=1,maximum-scale=5"/>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap">
+      <link rel="stylesheet" href="Css/estilos.css" />
+
+      <title>Pagina Desafio</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="container">
+        <h1 class="titulo">Pago de artículos</h1>
+        <div class="grid">
+          <div class="formulario">
+            <h3 class="subTitulo">Información del cliente</h3>
+            <form action="#" class="formulario formulario-uno">
+              <div class="formulario-contenedor">
+                <label class="etiqueta" for="email">Correo electrónico</label><br/>
+
+                <div class="ingreso-contenedor">
+                    <span class="material-icons">attach_email</span>
+                  <input type="text" class="entrada-datos" name="email" placeholder="Ingrese su correo..." id="email" required/>
+
+                </div>
+
+                <label class="etiqueta" for="phone">Teléfono</label>
+                <div class="ingreso-contenedor">
+                    <span class="material-icons">local_phone</span>
+                  <input type="text" class="entrada-datos" name="phone" placeholder="Ingresa tu teléfono..." id="phone" required/>
+                </div>
+              </div>
+            </form>
+            <h3 class="title">Datos para el envío</h3>
+            <form action="#" class="form">
+              <label class="etiqueta" for="name">Nombre</label>
+              <div class="formulario-contenedor">
+                <div class="ingreso-contenedor">
+                    <span class="material-icons">person_pin</span>
+                  <input type="text" class="entrada-datos" name="name" placeholder="Nombre completo..." id="name" required/>
+                </div>
+                <label class="etiqueta" for="address">Dirección</label>
+                <div class="ingreso-contenedor">
+                    <span class="material-icons">person_pin_circle</span>
+                  <input type="text" class="entrada-datos" name="direccion" placeholder="Introduce tu Dirección..." id="direccion" required/>
+                </div>
+                <label class="etiqueta" for="city">Ciudad</label>
+                <div class="ingreso-contenedor">
+                    <span class="material-icons">location_city</span>
+                  <input type="text" class="entrada-datos" name="ciudad" placeholder="Ingresa tu ciudad..." id="city" required/>
+                </div>
+
+                <div class="position-lateral">
+                  <div class="izquirda">
+                    <label class="etiqueta" for="provincia">Provincia</label>
+                    <div class="ingreso-contenedor">
+                        <span class="material-icons">public</span>
+                      <select class="entrada-datos" name="provincia" id="provincia" placeholder="Provincias...">
+                        <option value="selecciona" selected disabled>
+                          Tu Provincia...
+                        </option>
+                        <option value="Pichincha">Pichincha</option>
+                        <option value="Riobamba">Riobamba</option>
+                        <option value="Guayaquil">Guayas</option>
+                        <option value="Tena">Tena</option>
+                        <option value="Loja">Loja</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="derecha">
+                    <label class="etiqueta" for="postal">Código Postal</label>
+                    <div class="ingreso-contenedor">
+                        <span class="material-icons">markunread_mailbox</span>
+                      <input type="text" class="entrada-datos" name="postal" placeholder="Ingresa tu codigo postal..." id="postal" required/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comprobar">
+                  <input class="comprobar-box" type="checkbox" name="comprobar" required/>
+                  <label for="comprobar" class="etiqueta comprobar-etiqueta"> Aceptar y guardar tu información.</label>
+                </div>
+              </div>
+            </form>
+          
+           <button type="submit" href="#" class="boton">Continue</button>
+          </div>
+          <div class="compra">
+            <div class="tarjeta">
+              <div class="item">
+                <img src="img/img1.png" alt="imagen" class="product-img" />
+                <div class="desc">
+                  <h3 class="product-nombre">Guitarra acústica</h3>
+                  <p class="precio">
+                    $454.99
+                    <span class="regular">$594.99</span>
+                  </p>
+                  <div class="contador">
+                    <button type="button"class="boton-compra">
+                    <span class="material-icons material-icono">remove</span>
+                    </button>
+                    <input type="number" id="cantidad" class="value" value="1" min="0"/>
+                    <button type="button" class="boton-compra">
+                    <span class="material-icons material-icono">add</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item last">
+                <img src="img/img2.png" alt="imagen" class="product-img" />
+                <div class="desc">
+                  <h3 class="product-nombre">Guitarra Eléctrica</h3>
+                  <p class="precio">
+                    $674.99
+                    <span class="regular">$724.99</span>
+                  </p>
+                  <div class="contador">
+                    <button type="button"class="boton-compra">
+                    <span class="material-icons material-icono">remove</span>
+                    </button>
+                    <input type="number" id="cantidad" class="value" value="1" min="0"/>
+                    <button type="button" class="boton-compra">
+                    <span class="material-icons material-icono">add</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="valor_envio">
+                <h4 class="compra-texto">Valor de envío</h4>
+                <p class="compra-precio">$6</p>
+              </div>
+              <hr />
+              <div class="valor_envio">
+                <h4 class="compra-texto">Total</h4>
+                <p class="compra-precio">$1135.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </body>
+</html>

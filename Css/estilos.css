@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+  
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 40px 20px;
+    margin: 0 auto;
+  }
+  
+  .titulo {
+    font-size: 36px;
+    line-height: 44px;
+    color: #4e5150;
+    margin-bottom: 50px;
+  }
+  
+  .grid {
+    display: flex;
+  }
+  
+  .formulario {
+    width: 100%;
+  }
+  
+  .subTitulo {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  .formulario-uno {
+    margin-bottom: 55px;
+  }
+  
+  .etiqueta {
+    font-size: 12px;
+    line-height: 15px;
+    color: #4f4f4f;
+    margin-bottom: 6px;
+  }
+  
+  .ingreso-contenedor {
+    border: 1px solid #828282;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .entrada-datos {
+    font-size: 16px;
+    color: #000;
+    padding-left: 10px;
+    border-width: 0px;
+    outline-width: 0;
+  }
+  
+  .entrada-datos:placeholder {
+    color: #828282;
+  }
+  
+  .comprobar {
+    margin-top: 22px;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .comprobar-box {
+    margin-right: 7px;
+  }
+  
+  .position-lateral {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .boton {
+    float: right;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+    padding: 17px 45px;
+    background-color: #f2994a;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 1px solid #f2994a;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    
+  }
+  
+  .boton:hover {
+    background-position: right;
+    color: #050505;
+  }
+  
+  .compra {
+    width: 100%;
+  } 
+  
+  .tarjeta {
+    padding: 25px;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    max-width: 380px;
+    margin-left: auto;
+  }
+  
+  .item {
+    display: flex;
+    width: 100%;
+  }
+  
+  .product-img {
+    max-width: 135px;
+    width: 135px;
+    height: 135px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+  }
+  
+  .product-nombre {
+    font-size: 16px;
+    line-height: 20px;
+    color: #4e5150;
+    margin-bottom: 8px;
+  }
+  
+  .desc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 135px;
+  }
+  
+  .precio {
+    font-size: 16px;
+    line-height: 20px;
+    color: #f2994a;
+  }
+  
+  .regular {
+    font-size: 12px;
+    line-height: 15px;
+    color: #4e5150;
+    text-decoration-line: line-through;
+    padding-left: 10px;
+  }
+  
+  .contador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 15px 13px;
+    border: 1px solid #bbbbbb;
+    border-radius: 12px;
+    width: 135px;
+  }
+  
+  .boton-compra {
+    border: none;
+    outline-width: 0;
+  }
+  
+  .material-icono {
+    color: #474747;
+    padding: 4px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .value {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    outline-width: 0;
+    font-size: 16px;
+    color: #333333;
+  }
+  
+  .last {
+    margin-bottom: 90px;
+  }
+  
+  .valor_envio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .compra-texto {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+  }
+  
+  .compra-precio {
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+  }
+  
+  @media screen and (max-width: 851px) {
+    .tarjeta{
+      margin-left: 10px;
+    }
+    .product-image {
+      width: 122px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .grid {
+      flex-direction: column-reverse;
+    }
+    .tarjeta {
+      margin-left: 0;
+    }
+    .compra {
+      margin-bottom: 40px;
+    }
+    .titulo {
+      font-size: 24px;
+    }
+    .product-name {
+      font-size: 12px;
+    }
+    .precio {
+      font-size: 14px;
+    }
+    .regular {
+      font-size: 10px;
+    }
+    .compra-texto {
+      font-size: 14px;
+    }
+    .subTitulo {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .compra {
+      width: 100%;
+    }
+    .tarjeta {
+      width: 100%;
+    }
+    .contador {
+      width: 100%;
+      padding: 5px 10px;
+    }
+  }
