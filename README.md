@@ -33,7 +33,7 @@ Este proyecto consiste en un formulario interactivo que recopila la información
 - HTML
 - CSS
 - Material Icons (para los íconos)
-- [Inserta aquí otras tecnologías/frameworks utilizados]
+- Google Fonts (para las fuentes)
 
 ## Contribución
 
