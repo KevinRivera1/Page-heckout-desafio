@@ -11,7 +11,7 @@ Este es un formulario de pago de artículos que permite a los clientes proporcio
 - [Instrucciones de Uso](#instrucciones-de-uso)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Contribución](#contribución)
-- [Ejecución del proyecto](#cómo-Ejecutar-el-Proyecto)
+- [Cómo Ejecutar el Proyecto](#cómo-ejecutar-el-proyecto)
 
 
 ## Descripción
