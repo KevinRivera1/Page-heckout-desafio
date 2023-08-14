@@ -1,4 +1,4 @@
-# Page-heckout-desafio 
+# Page-checkout-desafio 
 <img src="img/captura.png" alt="Pago de Artículos" class="producto-img"/>
 
 # Pago de Artículos
